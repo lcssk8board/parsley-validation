@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="assets/js/vendors/jquery.js"></script>
+	<script src="assets/js/vendors/parsley.min.js"></script>
+	<link rel="stylesheet" href="assets/css/bootstrap.css"></link>
+	<link rel="stylesheet" href="assets/css/parsley.css"></link>
+	<link rel="stylesheet" href="assets/css/docs.css"></link>
+</head>
+<body>
+	<div>
+		<form id="demo-form">
+			<label>Type validation *:</label>
+			<select id="select" class="form-control">
+				<option value="0">OPTION 1</option>
+				<option value="1">OPTION 2</option>
+				<option value="2">OPTION 3</option>
+			</select>
+			
+			<br>
+		
+			<div id="div-1">
+				<label for="fullname1">Full Name 1* :</label>
+				<input type="text" class="form-control fullname" name="fullname1" />
+			</div>
+			<div id="div-2">
+				<label for="fullname2">Full Name 2* :</label>
+				<input type="text" class="form-control fullname" name="fullname2" />
+			</div>
+			<div id="div-3">
+				<label for="fullname3">Full Name 3* :</label>
+				<input type="text" class="form-control fullname" name="fullname3" />
+			</div>
+			
+			<br>
+			
+			<label for="email">Email * :</label>
+			<input type="email" class="form-control" name="email" />
+			
+			<br />
+			<input type="submit" class="btn btn-default" value="validate" />
+
+			<div class="bs-callout bs-callout-info">
+			  <h4>Yay!</h4>
+			  <p>Everything seems to be ok :)</p>
+			</div>
+		</form>		
+	</div>
+	<script src="assets/js/validateController.js"></script>
+	<script>
+		this.validateController = new ValidateController();
+	</script>
+</body>
+</html>
